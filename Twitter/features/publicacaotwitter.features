@@ -1,0 +1,20 @@
+#language: pt
+	Funcionalidade: Publicação de postagem no Twitter
+	
+	Para realizar a publicação da postagem
+	Como usuário cadastrado no twitter
+	Eu quero informar um texto e este texto deve ser publicado
+	
+	Cenario: Cadastro de publicação do tipo texto
+		Dado que eu estou logado
+		Quando eu informar um texto
+		E clicar em publicar
+		Então deve ser postado meu texto
+		
+	Cenario: Cadastro de publicação do tipo enquete
+		Dado que eu estou logado
+		Quando eu informar uma pergunta
+		E uma resposta
+		E segunda resposta
+		E clicar em publicar
+		Então deve ser postado a enquete
